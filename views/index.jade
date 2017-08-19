@@ -1,0 +1,154 @@
+extends layout
+
+block content
+  //- h1= title
+  //- p Welcome to #{title}
+  
+  
+  
+  
+  //------------------Profile-----------------------------
+  .row
+    //- .col.s2
+    //-   nav.z-depth-0.transparent.row
+                
+    //-         a.col.s3.left(href='#') 
+    //-           h5#logo.black-text(style="font-weight:900") Brian 
+    //-             span.primary Turloff      
+    //-         ul#nav-mobile.hide-on-med-and-down.col.s6.push-l1
+    //-           li
+    //-             a(href='#') Sass
+    //-           li
+    //-             a(href='#') Components
+    //-           li
+    //-             a(href='#') JavaScript
+    .l12.s12
+        .profile.card-panel.z-depth-3
+
+          //- -------------------------TOP------------------------
+          .profile-top.primary-background.white-text.row.profile-background(style="position:relative; display:flex;  flex-direction:column; justify-content:center")
+            .row
+              .profile-photo.col.s6.l5.push-s3.center-align
+                img.responsive-img.z-depth-2(src="/images/ProfilePhoto_square.jpg" alt="" style="width:85%; margin-top:40px; margin-bottom:-40px; border-radius:15px")
+              .heading.col.l7.s12.bold.white-text.valign-wrapper(style="position:relative" )
+                h2() Brian Turloff 
+                h5 Software Engineer
+                ul(style="display:flex")
+                  li
+                    a.btn-floating.btn-medium.waves-effect.waves-light.white
+                      i.fa.fa-facebook.grey-text.lighten-3
+                  li
+                    a.btn-floating.btn-medium.waves-effect.waves-light.white
+                      i.fa.fa-github.grey-text.lighten-3
+                  li
+                    a.btn-floating.btn-medium.waves-effect.waves-light.white
+                      i.fa.fa-linkedin.grey-text.lighten-3
+
+
+          
+          
+          //- ------------------------BOTTOM----------------------
+          .div.profile-bottom(style=" margin:50px 40px 40px 40px")
+            .row
+              .about.col.l5.s12
+                h5.bold About
+                  span.primary   Me 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda explicabo saepe corrupti, odit magni dolorem impedit tempora repellat iste autem quod perferendis labore numquam vitae obcaecati, consequuntur expedita porro alias.
+                
+                  
+
+              .contact.col.l6.push-l1.s12
+                .contact-header.col.l3.s3
+                  p Email:
+                  p Address:
+                  p Phone:
+                .contact-content.col.l9.s9.grey-text
+                  p brian.turloff@gmail.com
+                  p Hillsboro, OR 97006
+                  p 254-423-8536
+            .row()                
+              .col.l5.s12.left
+                a.waves-effect.btn.white.black-text(href="/images/ProfilePhoto_square.jpg" download="My Pic")
+                  i.material-icons.left file_download
+                  | Download Resume
+              .col.l6.push-l1.s12.left-align
+                .col
+                  a.waves-effect.btn.black-text.white.modal-trigger(href="#modal1")
+                    i.material-icons.left message
+                    | Contact Me
+            #modal1.modal
+              .modal-content
+                h4 Modal Header
+                p A bunch of text
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Agree
+
+
+
+
+                    
+    //- ---------------------------RESUME--------------------------------
+    .section
+      .row
+        .col.l2
+        .col.l8.s12
+            .profile.card-panel.z-depth-3
+
+              //- -------------------------TOP------------------------
+              .profile-top.primary-background.white-text.row.profile-background(style="position:relative")
+                
+                  
+                  .heading.col.s12.bold.white-text(style="")
+                    h3.center-align(style="font-weight:600") Resume
+
+
+              
+              
+              //- ------------------------BOTTOM----------------------
+              .div.profile-bottom(style="padding-left=30px")
+                  p American Express	
+                  p Software Engineer Consultant, Phoenix, AZ
+                  p Jan 2016 – Present
+                  ul
+                    li.p3
+                      | (Node JS) Created an administrative web application to control a fleet of personal assistant robots (V-Go).
+                    li.p3
+                      | (Xamarin) Currently developing a recruiting iOS app for American Express recruiters to use at Career Fairs.  Collects student information and pushes the data to a Mongo DB server.
+                  hr
+                  .p1 ACSS, L-3 Communications	
+                  .p2 Software Engineer Intern, Phoenix, AZ
+                  .p2 May 2015 – Aug 2015
+                  ul
+                    li.p3
+                      | (Python) Part of a software development team of three people that created a software testing suite for the company’s flagship product, TCAS (Traffic Air Collision Avoidance System). The testing suite is currently being used in the production of the TCAS.
+                    li.p3
+                      | The testing suite currently saves the company hundreds of man hours every week by discovering circuit cards that are inoperable at specific points in the production process.
+                  hr
+                  .p1 L-3 Vertex, Aerospace 	
+                  .p2 Structural Helicopter Mechanic, Afghanistan
+                  .p2 Sep 2010 – Nov 2011
+                  ul
+                    li.p3 Lead Structural Technician in a 12 personnel maintenance team.
+                    li.p3
+                      | Engaged in teleconferencing with remote maintenance teams to coordinate regional maintenance requests and deliver technical advice and requests to colleagues.  These teleconferences resulted in solving seemingly complex, technical problems and saving the U.S. Army over $100,000 dollars and 750 man hours.
+                  hr
+                  .p1 U.S. Army – 82nd Airborne Division 	
+                  .p2 Aircraft Structural Repairer, Fort Bragg, NC
+                  .p2 Nov 2001 – May 2009
+                  ul
+                    li.p3 Specialized in the fabrication of metal and composite structures.
+                    li.p3
+                      | Decorated with 9 awards for outstanding work ethic and achievement including 4 Army Commendation Medals and 5 Certificate of Achievements.
+
+              
+
+            
+  //- .row  
+  //-   .col.s4.blue
+  //-     h1 hello
+  //-   .col.s8.red
+  //-     h1 great
+
+  //- div.container
+    
+
