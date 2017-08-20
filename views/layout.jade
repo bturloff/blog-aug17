@@ -11,6 +11,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/nav.css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet')
     
   
@@ -22,6 +23,23 @@ html
 
 
   body.site-background
+    .row.nav
+      nav(style="display:flex; align-items:center;")
+        .col.s3
+        a.col.s3(href='#' style="")
+          div
+            h5.black-text(style="") Brian 
+              span.primary Turloff 
+            h6 Software Engineer 
+        ul#nav-mobile.hide-on-med-and-down.col.s6.push-l1
+          li
+            a(href='#') Profile
+          li
+            a(href='#') Resume
+          li
+            a(href='#') Portfolio
+          li
+            a(href='#') Blog
     block content
     script(src='https://use.fontawesome.com/ebf69bf77f.js')
     script(type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.min.js')
